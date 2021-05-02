@@ -1,21 +1,23 @@
 <template>
   <div class="app">
     <Sidebar />
-    <div>a</div>
-    <div>b</div>
-    <!-- <NotesListContainer /> -->
-    <!-- <NoteContainer /> -->
+    <NotesListContainer />
+    <NoteContainer />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-import Sidebar from "@/components/Sidebar.vue";
+import Sidebar from "./components/Sidebar.vue";
+import NotesListContainer from "./components/NotesListContainer.vue";
+import NoteContainer from "./components/NoteContainer.vue";
 
 @Component({
   components: {
     Sidebar,
+    NotesListContainer,
+    NoteContainer,
   },
 })
 export default class Home extends Vue {}

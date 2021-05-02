@@ -1,24 +1,24 @@
 <template>
-  <div class="notes-list__container">
-    <NotesList />
-  </div>
+  <ul class="notes-list">
+    <!-- <NotesListItem isTitle title="Auuuuuuuuuuuuu" /> -->
+  </ul>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-import NotesList from "./NotesList.vue";
+// import NotesListItem from "./SidebarItem.vue";
 
 @Component({
   components: {
-    NotesList,
+    // NotesListItem,
   },
 })
-export default class NotesListContainer extends Vue {}
+export default class NotesList extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-.notes-list__container {
+.notes-list {
   background-color: #282828;
   height: 100vh;
 }
